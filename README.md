@@ -1,5 +1,21 @@
 ## Welcome to GitHub Pages
 
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script>
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+      //console.log('Image URL: ' + profile.getImageUrl());
+      //console.log('Name: ' + profile.getName());
+      //console.log('Email: ' + profile.getEmail());
+      var user_uname = profile.getName();
+      var user_email = profile.getEmail();
+      alert(user_uname);
+    }
+
+</script>
 You can use the [editor on GitHub](https://github.com/damiandurnford/damiandurnford.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
