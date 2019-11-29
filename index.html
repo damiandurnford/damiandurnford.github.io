@@ -14,10 +14,13 @@
   <div class="top-container">
   <h1>JW Songs</h1>
   <p>Psalms 96:2</p>
+    
+    <button onclick="songsButton()" style="width:70px" id="songsButton">Songs</button>
 </div>
 
 <div class="header" id="myHeader">
-  <h2>My Header</h2>
+<p id="song" style="display:none"></p>
+<p id="songTitle" style="display:none"></p>
 </div>
 
 <div class="content">
@@ -49,29 +52,9 @@ function myFunction() {
 }
 </script>
   
-<div class="jumbotron text-center teal">
-  <h1>JW Songs</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container">
-  
-<p id="song" style="display:none"></p>
-<p id="songTitle" style="display:none"></p>
-<p id="lyrics" style="display:none"></p>
-    <div class="row">
-        <div class="column">
 
-            <p id="menu"></p>
-        </div>
-        <div class="column">
-            
-            <p id="table" style="display:none">Loading...</p>
-        </div>
-    </div>
-</div>
    
-<button onclick="songsButton()" style="width:70px" id="songsButton">Songs</button>
+
 
 
 
